@@ -6,14 +6,16 @@ pipeline {
         }
 
         stages {
-        //    stage('Checkout') {
+        //
+                stage('Checkout') {
                 steps {
                     // Get some code from a GitHub repository
 
                  //   git branch: 'main', url: 'YOUR GITHUB REPO URL HERE'
                 }
-           // }
-            stage('Compile') {
+           }
+//
+                stage('Compile') {
                 steps {
                     // Run Maven on a Unix agent.
                     sh "mvn clean compile"
